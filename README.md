@@ -17,5 +17,5 @@ As written, the script queries the CVS site every minute (change on line 82), an
 
 If any of the cities in the targetCities list have available appointments, it prints another message and calls sendNotifications() (no more than once an hour, change on line 75), which is where you can add code to send email/text/etc notifications as desired (line 18). For notification instructions search "how to send email with Python", "how to send text messages with Python", and/or "how to send text messages with email".
 
-##### Spoiler: 
+#### Spoiler: 
 As far as I can tell from running this on various states for about a week (late March 2021), CVS adds appointments to their central scheduling site every night around 4AM eastern time. However, the website says something along the lines of "We're updating, check back later" for approximately the next two hours, even though the appointments are listed as theoretically "available".  If you set this program up to send you notifications, you're likely to start getting those notifications in the middle of the night, about two hours before you can actually book an appointment. On the other hand, if you get a notification any other time for a city that is usually not available, you can probably book that appointment right away. 
